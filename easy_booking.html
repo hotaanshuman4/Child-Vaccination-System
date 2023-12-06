@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Child Vaccination Slot Booking</title>
+    <style>
+        body {
+            background-image: url(https://www.childrensmedgroup.com/cmg-media/uploads/2016/04/CMG_InfantImmunizationWeek-1024x682.jpg);
+            background-size: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        #content {
+            text-align: center;
+            padding: 20px;
+        }
+        #image-section img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="content">
+        <header>
+            <h1>Child Vaccination Slot Booking</h1>
+        </header>
+        
+        <section id="booking-form">
+            <h2>Book a Vaccination Slot</h2>
+            <form action="slot" method="post">
+                <label for="child-name">Child's Name:</label>
+                <input type="text" id="child-name" name="child-name" required><br><br>
+                
+                <label for="date">Preferred Date:</label>
+                <input type="date" id="date" name="date" required><br><br>
+                
+                <label for="time">Preferred Time:</label>
+                <input type="time" id="time" name="time" required><br><br>
+                
+                <ul><li><a href ="">Submit</a></li></ul>
+            </form>
+        </section>
+
+        <section id="image-section">
+            <h2></h2>
+        </section>
+    </div>
+    
+    <footer>
+        <p>&copy; 2023 Child Vaccination Slot Booking</p>
+    </footer>
+</body>
+</html>

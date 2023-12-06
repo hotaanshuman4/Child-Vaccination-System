@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Child Vaccine Slot Booking</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-image: url('https://qtxasset.com/fiercehealthcare/1562973884/GettyImages-898906336.jpg/GettyImages-898906336.jpg?OhHp8.hb4iZbXQ.xHf4.JzCZpWlc56My'); /* Replace this with your image URL */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .container {
+            margin-top: 50px;
+            background-color: rgba(255, 255, 255, 0.8); /* Adding a semi-transparent white background to the container */
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .booking-id {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .input-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="date"],
+        input[type="time"] {
+            padding: 8px;
+            width: 200px;
+            font-size: 16px;
+        }
+        input[type="submit"] {
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="booking-id">
+            Your Booking ID: <span id="bookingId">ABC123</span>
+        </div>
+        <form id="bookingForm">
+            <div class="input-group">
+                <label for="date">Select Date:</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            <div class="input-group">
+                <label for="time">Select Time:</label>
+                <input type="time" id="time" name="time" required>
+            </div>
+            <input type="submit" value="Book Slot">
+        </form>
+    </div>
+
+    <script>
+        document.getElementById("bookingForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            // Here you can handle the form submission, for example, by sending data to a server.
+            // For this example, let's just display a success message.
+            alert("Slot booked successfully!");
+        });
+    </script>
+</body>
+</html>
